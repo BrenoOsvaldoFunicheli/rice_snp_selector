@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+rice.db
 .Python
 env/
 build/

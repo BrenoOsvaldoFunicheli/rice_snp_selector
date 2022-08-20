@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, MetaData, Table, Column, ForeignKey
 from sqlalchemy.ext.automap import automap_base
 
+
 def get_engine(path="sqlite:///mydatabase.db"):
     # engine, suppose it has two tables 'user' and 'address' set up
     return create_engine(path)
@@ -17,10 +18,15 @@ def get_metadata(engine):
 
 def reflect_schema(metadata):
     # we can then produce a set of mappings from this MetaData.
-    Base = automap_base(metadata=metadata)
+    base = automap_base(metadata=metadata)
 
     # calling prepare() just sets up mapped classes and relationships.
-    Base.prepare()
+    base.prepare()
 
-    return Base
+    return base
 
+def get_schema(path):
+    engine = get_engine(path)
+    metadata = get_metadata(engine)
+    
+    return reflect_schema(metadata)

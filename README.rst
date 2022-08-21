@@ -1,13 +1,13 @@
 =================
-rice_snp_selector
+riceieasy
 =================
 
 
-.. image:: https://img.shields.io/pypi/v/rice_snp_selector.svg
-        :target: https://pypi.python.org/pypi/rice_snp_selector
+.. image:: https://img.shields.io/pypi/v/riceieasy.svg
+        :target: https://pypi.python.org/pypi/riceieasy
 
-.. image:: https://img.shields.io/travis/BrenoOsvaldoFunicheli/rice_snp_selector.svg
-        :target: https://travis-ci.com/BrenoOsvaldoFunicheli/rice_snp_selector
+.. image:: https://img.shields.io/travis/BrenoOsvaldoFunicheli/riceieasy.svg
+        :target: https://travis-ci.com/BrenoOsvaldoFunicheli/riceieasy
 
 .. image:: https://readthedocs.org/projects/rice-snp-selector/badge/?version=latest
         :target: https://rice-snp-selector.readthedocs.io/en/latest/?version=latest

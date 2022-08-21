@@ -48,9 +48,9 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint/flake8: ## check style with flake8
-	flake8 rice_snp_selector tests
+	flake8 riceieasy tests
 lint/black: ## check style with black
-	black --check rice_snp_selector tests
+	black --check riceieasy tests
 
 lint: lint/flake8 lint/black ## check style
 
@@ -61,15 +61,15 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source rice_snp_selector -m pytest
+	coverage run --source riceieasy -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/rice_snp_selector.rst
+	rm -f docs/riceieasy.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ rice_snp_selector
+	sphinx-apidoc -o docs/ riceieasy
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

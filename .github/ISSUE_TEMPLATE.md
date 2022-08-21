@@ -1,4 +1,4 @@
-* rice_snp_selector version:
+* riceieasy version:
 * Python version:
 * Operating System:
 

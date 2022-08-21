@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=rice_snp_selector
+set SPHINXPROJ=riceieasy
 
 if "%1" == "" goto help
 

@@ -1,4 +1,4 @@
-"""Top-level package for rice_snp_selector."""
+"""Top-level package for riceieasy."""
 
 __author__ = """Breno Osvaldo Funicheli"""
 __email__ = 'osvaldobreno99@gmail.com'

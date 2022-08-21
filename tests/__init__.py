@@ -1,1 +1,1 @@
-"""Unit test package for rice_snp_selector."""
+"""Unit test package for riceieasy."""

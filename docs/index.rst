@@ -1,4 +1,4 @@
-Welcome to rice_snp_selector's documentation!
+Welcome to riceieasy's documentation!
 ======================================
 
 .. toctree::

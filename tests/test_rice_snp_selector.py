@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-"""Tests for `rice_snp_selector` package."""
+"""Tests for `riceieasy` package."""
 
 import pytest
 
 from click.testing import CliRunner
 
-from rice_snp_selector import rice_snp_selector
-from rice_snp_selector import cli
+from riceieasy import riceieasy
+from riceieasy import cli
 
 
 @pytest.fixture
@@ -31,7 +31,7 @@ def test_command_line_interface():
     runner = CliRunner()
     result = runner.invoke(cli.main)
     assert result.exit_code == 0
-    assert 'rice_snp_selector.cli.main' in result.output
+    assert 'riceieasy.cli.main' in result.output
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output
